@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>hello</title>
+        <title>簡単な計算機</title>
     </head>
     <body>
         <script>
-            var name=prompt("お名前は？");
-            while(true)
+            for(;;)
             {
-                var kakunin=confirm("名前は、"+name+"でいいですか？");//trueとfalseを返す。
-                if(kakunin)break;
-                else name=prompt("もう一度聞きます。\nお名前は何ですか?");
-            }
-            alert(name+"さん、よろしくお願いします。");
+                var answer;
+                var moji=prompt("足し算(1)、引き算(2)、掛け算(3)、割り算(4)のどれをしますか？");
+                var first=prompt("一つ目の数字の値を入力してください。");
+                var second=prompt("二つ目の数字の値を入力してください。");
+
+                if(second==0&&moji==4)alert("エラーが発生しました。");
+                else
+                {
+                    if(moji==1)
+                    {
+                        answer=first+second;
+                        alert(first + "+" + second + "=" + answer );
+                    }
+                    else if(moji==2)
+                    {
+                        answer=first-second;
+                        alert(first + "-" + second + "=" + answer );
+                    }
+                    else if(moji==3)
+                    {
+                        answer=first*second;
+                        alert(first + "×" + second + "=" + answer );
+                    }
+                    else 
+                    {
+                        answer=first/second;
+                        alert(first + "÷" + second + "=" + answer );
+                    }
+                }
+                if(confirm("終了しますか？yesならok、noならキャンセル"))break;
+        }
         </script>
     </body>
 </html>
