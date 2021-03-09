@@ -12,7 +12,7 @@
                 var first=prompt("一つ目の数字の値を入力してください。");
                 var second=prompt("二つ目の数字の値を入力してください。");
 
-                if(second==0&&moji==4)alert("エラーが発生しました。");
+                if(second==0&&moji==4||second==null||first==null||moji==null)alert("エラーが発生しました。");
                 else
                 {
                     if(moji==1)
@@ -36,7 +36,7 @@
                         alert(first + "÷" + second + "=" + answer );
                     }
                 }
-                if(confirm("終了しますか？yesならok、noならキャンセル"))break;
+                if(confirm("終了しますか？yesなら左側、noなら右側"))break;
         }
         </script>
     </body>
