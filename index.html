@@ -12,7 +12,9 @@
                 var first=prompt("一つ目の数字の値を入力してください。");
                 var second=prompt("二つ目の数字の値を入力してください。");
 
-                if(second==0&&moji==4||second==null||first==null||moji==null)alert("エラーが発生しました。");
+                if(second==0&&moji==4)alert("エラーが発生しました。");
+                else if(first==''||second=='')alert("エラーが発生しました。");
+                else if(moji=='')alert("エラーが発生しました。");
                 else
                 {
                     if(moji==1)
