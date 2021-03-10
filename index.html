@@ -1,47 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>簡単な計算機</title>
-    </head>
-    <body>
-        <script>
-            for(;;)
-            {
-                var answer;
-                var moji=prompt("足し算(1)、引き算(2)、掛け算(3)、割り算(4)のどれをしますか？");
-                var first=prompt("一つ目の数字の値を入力してください。");
-                var second=prompt("二つ目の数字の値を入力してください。");
-
-                if(second==0&&moji==4)alert("エラーが発生しました。");
-                else if(first==''||second=='')alert("エラーが発生しました。");
-                else if(moji=='')alert("エラーが発生しました。");
-                else if(first==null||second==null)alert("エラーが発生しました。");
-                else if(moji==null)alert("エラーが発生しました。");
-                else
-                {
-                    if(moji==1)
-                    {
-                        answer=first+second;
-                        alert(first + "+" + second + "=" + answer );
-                    }
-                    else if(moji==2)
-                    {
-                        answer=first-second;
-                        alert(first + "-" + second + "=" + answer );
-                    }
-                    else if(moji==3)
-                    {
-                        answer=first*second;
-                        alert(first + "×" + second + "=" + answer );
-                    }
-                    else 
-                    {
-                        answer=first/second;
-                        alert(first + "÷" + second + "=" + answer );
-                    }
-                }
-                if(prompt("終了しますか？yesなら1")==1)break;
-        }
-        </script>
-    </body>
+    <meta charset ="utf-8">
+    <script src="sansu.js"></script>
+    <script src=kokugo.js></script>
 </html>
