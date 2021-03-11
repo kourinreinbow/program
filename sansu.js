@@ -1,9 +1,14 @@
-var kotae=prompt("7 × 35 = ","");
-if(kotae==245)
+function Pow(suti)
 {
-    alert("正解!");
+    return suti*suti;
 }
-else
+
+function souwa(suti)
 {
-    alert("残念");
+    var answer=0;
+    for(var i=0;i<=suti;i++)
+    {
+        answer+=i;
+    }
+    return answer;
 }
