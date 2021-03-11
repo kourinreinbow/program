@@ -2,7 +2,13 @@
 <html>
     <title>問題</title>
     <meta charset ="utf-8">
-    <script src="sansu.js"></script>
-    <script src=kokugo.js></script>
-    <head>何問正解できたかな？</head>
-</html>
+
+    <script type=text/javascript script src="keisan.js"></script>
+    <script>
+        var suti=prompt("数値を入力してください。");
+        var answer=Pow(suti);
+        var answer_souwa=souwa(suti);
+        alert(suti+" × "+suti +" = "+answer);
+        alert("1から"+suti+"までの総和は、"+answer_souwa+"です。");
+    </script>
+    </html>
