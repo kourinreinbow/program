@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <html>
+        <meta charset="utf-8">
+    </html>
+    <body>
+        <script>
+            const $form = $('#form')
+            $('.btn-send').on('click', evt => {
+                $form.submit()
+                $form[0].reset()
+                return false
+            })
+        </script>
+
+        <form name="hoge" id="hoge1" action="main.php" method="post" target="send">
+            <p>ここに入力してください：<input type="text" id="id_textBox1" name="sendPHP" autocomplete="on"></p>
+            <button class="btn-send">決定</button>
+        </form>
+    </body>
+</html>
